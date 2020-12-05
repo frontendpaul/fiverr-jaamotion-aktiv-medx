@@ -33,6 +33,6 @@ const faqItems = document.querySelectorAll('.faq');
 
 for (const faqItem of faqItems) {
   faqItem.addEventListener('click', (e) => {
-    e.target.classList.toggle('open');
+    e.target.closest('.faq').classList.toggle('open');
   });
 }
