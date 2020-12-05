@@ -962,12 +962,15 @@ h1, h2, h3 {
 }
 
 .pricing-card-wrapper {
+  display: flex;
+  align-items: center;
   height: 770px;
+  margin: 0 25px;
 }
 
 .pricing-card {
   width: 100%;
-  margin: 0 25px;
+  margin: 0;
   border: 2px solid #CCCCCC;
   padding: 15px 40px;
   color: var(--black);
