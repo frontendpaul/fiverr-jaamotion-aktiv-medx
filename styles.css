@@ -3,6 +3,7 @@
   --primary-text: #303030;
   --secondary-text: #181818;
   --grey-text: #707070;
+  --testimonials-grey: #7A839E;
   --white: #fff;
   --light-grey: #F4F5FA;
   --very-light-grtey: #F3F3F3;
@@ -77,6 +78,12 @@ h1, h2, h3 {
 .section-title {
   font-size: 30px;
   color: var(--secondary-text);
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .text-center {
@@ -179,12 +186,36 @@ h1, h2, h3 {
   transform: scale(.9);
 }
 
+.btn-outline {
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  background: transparent;
+  color: var(--black);
+}
+
+.btn-outline.primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover, 
+.btn-outline.primary:hover {
+  border-color: var(--primary-color);
+  color: var(--white);
+  background: var(--primary-color);
+} 
+
 .btn-wide {
   width: 210px;
   text-align: center;
 }
 
 .btn-more {
+  padding: 1.1em 4em;
+}
+
+.card-btn {
+  font-size: 13px;
   padding: 1.1em 4em;
 }
 
@@ -204,7 +235,7 @@ h1, h2, h3 {
   left: -1px;
 }
 
-.button-wrapper {
+.btn-wrapper {
   margin: 2rem 0;
 }
 
@@ -228,7 +259,7 @@ h1, h2, h3 {
 
 .card {
   background: var(--white);
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: var(--shadow);
 }
 
@@ -494,9 +525,10 @@ h1, h2, h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
-.hero-arrow-img {
+.arrow-img {
   width: 30px;
 }
 
@@ -604,13 +636,14 @@ h1, h2, h3 {
 /* Services section */
 .services-section {
   position: relative;
-  padding-top: 1px;
+  /* padding-top: 1px; */
 }
+
 .services-bg {
   width: 100%;
   position: absolute;
   z-index: -1;
-  top: -22vw;
+  top: -25vw;
   overflow-x: hidden;
 }
 
@@ -629,6 +662,10 @@ h1, h2, h3 {
   z-index: -1;
   top: -65vw;
   left: 40%;
+}
+
+.services-section .title {
+  margin-top: 0;
 }
 
 
@@ -719,21 +756,21 @@ h1, h2, h3 {
 
 .analysis-bg-img#img-3 {
   width: 40%;
-  top: 30px;
+  top: 50vw;
   left: -10%;
   z-index: -1;
 }
 
 .analysis-bg-img#img-4 {
   width: 15%;
-  top: 110px;
+  top: 110vw;
   left: 30%;
   z-index: 2;
 }
 
 .analysis-bg-img#img-5 {
   width: 45%;
-  top: 100px;
+  top: 90vw;
   right: -20%;
   z-index: -1;
 }
@@ -743,21 +780,21 @@ h1, h2, h3 {
   overflow-y: visible;
   position: absolute;
   z-index: -1;
-  bottom: -70vw;
+  bottom: -35vw;
   width: 100%;
-  height: 150vw;
+  height: 100vw;
 }
 
 .analysis-bg-img#img-6 {
   width: 120%;
-  top: 0;
+  top: -15vw;
   right: -30%;
   z-index: 2;
 }
 
 .analysis-bg-img#img-7 {
   width: 30px;
-  top: 120px;
+  top: 15vw;
   right: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -765,7 +802,7 @@ h1, h2, h3 {
 
 .analysis-bg-img#img-8 {
   width: 15%;
-  top: 120px;
+  top: 15vw;
   right: 30%;
   z-index: 2;
 }
@@ -792,6 +829,234 @@ h1, h2, h3 {
   background: url(./assets/check.svg) 0/contain no-repeat;
   position: absolute;
   left: -35px;
+}
+
+
+
+
+/* Testimonials */
+.testimonials-wrapper {
+  position: relative;
+  margin: 0 -10px;
+}
+
+.quotes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.quote {
+  font-size: 60px;
+  color: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  display: inline-block;
+}
+
+.quote-bottom {
+  top: initial;
+  left: initial;
+  right: 30px;
+  bottom: 5px;
+  transform: scale(-1,-1);
+}
+
+.testimonials-slider {
+  padding: 50px 0;
+}
+
+.testimonials-card {
+  height: 335px;
+  padding: 30px 20px;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.testimonials-img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.star {
+  width: 16px;
+  margin-right: 7px;
+}
+
+.star:last-of-type {
+  margin-right: 0;
+}
+
+.testimonials-content {
+  margin-top: auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--testimonials-grey);
+}
+
+.person .name {
+  font-weight: 600;
+  color: var(--black);
+}
+
+
+
+/* Pricing */
+.pricing {
+  padding-top: 70vw;
+  position: relative;
+}
+
+.pricing-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.pricing-bg-img {
+  position: relative;
+  left: 50vw;
+}
+
+.pricing-slider-wrapper {
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--white);
+  background: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
+
+.prev-btn {
+  left: 5px;
+}
+
+.next-btn {
+  right:5px;
+}
+
+.pricing-slider {
+  padding: 35px 0;
+}
+
+.pricing-card-wrapper {
+  height: 770px;
+}
+
+.pricing-card {
+  margin: 0 25px;
+  border: 2px solid #CCCCCC;
+  padding: 15px 40px;
+  color: var(--black);
+}
+
+.bestseller {
+  border: 3px solid var(--primary-color);
+  position: relative;
+}
+
+.bestseller::before {
+  content: '';
+  display: block;
+  width: 110%;
+  height: 22vw;
+  background: url(./assets/ribbon.png) 0/contain no-repeat;
+  position: absolute;
+  top: -40px;
+  left: -5%;
+}
+
+.bestseller-title {
+  display: none;
+}
+
+.bestseller .bestseller-title {
+  display: block;
+  position: absolute;
+  top: -94px;
+  left: 0;
+  width: 100%;
+  color: var(--white);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.pricing-card p {
+  text-align: center;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.price {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  margin-right: .1em;
+}
+
+.price span {
+  position: absolute;
+  top: .3em;
+  right: -2em;
+}
+
+#free .price {
+  font-size: 48px;  
+}
+
+.price-wrapper span {
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: .5em;
+}
+
+.price-right {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 30px 0 0 ;
+}
+
+.benefits-list .checklist-item::before {
+  background-image: url(./assets/checked.svg);
+}
+
+.minimum-term {
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 
