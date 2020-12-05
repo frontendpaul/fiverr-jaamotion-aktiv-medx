@@ -26,3 +26,13 @@ document.querySelector(".has-dropdown > a").addEventListener('click', function (
     .classList.toggle("active"),
     this.classList.toggle("open");
 });
+
+
+// Hidden text handler
+const faqItems = document.querySelectorAll('.faq');
+
+for (const faqItem of faqItems) {
+  faqItem.addEventListener('click', (e) => {
+    e.target.classList.toggle('open');
+  });
+}

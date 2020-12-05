@@ -14,12 +14,39 @@ const pricingSlider = new Siema({
   loop: true
 });
 
-const prev = document.querySelector(".prev-btn");
-const next = document.querySelector(".next-btn");
-prev.addEventListener("click", () => pricingSlider.prev());
-next.addEventListener("click", () => pricingSlider.next());
+const pricingPrev = document.querySelector(".pricing-slider-wrapper .prev-btn");
+const pricingNext = document.querySelector(".pricing-slider-wrapper .next-btn");
+pricingPrev.addEventListener("click", () => pricingSlider.prev());
+pricingNext.addEventListener("click", () => pricingSlider.next());
+
+
+function animateCurrentSlide() {
+  this.innerElements.forEach((slide, i) => {
+    const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
+    this.innerElements[i].classList[addOrRemove]('active');
+  });
+}
+
+const staffSlider = new Siema({
+  selector: '.staff-slider',
+  duration: 500,
+  easing: 'ease-out',
+  perPage: 1,
+  loop: true,
+  onInit: animateCurrentSlide,
+  onChange: animateCurrentSlide
+});
+
+const staffPrev = document.querySelector(".staff-slider-controls .prev-btn");
+const staffNext = document.querySelector(".staff-slider-controls .next-btn");
+staffPrev.addEventListener("click", () => staffSlider.prev());
+staffNext.addEventListener("click", () => staffSlider.next());
+
+
+
 
 setInterval(() => {
   testimonialsSlider.next();
-  // pricingSlider.next();
+  pricingSlider.next();
+  staffSlider.next();
 }, 5000);
