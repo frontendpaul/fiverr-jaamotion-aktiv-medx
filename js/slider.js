@@ -21,5 +21,5 @@ next.addEventListener("click", () => pricingSlider.next());
 
 setInterval(() => {
   testimonialsSlider.next();
-  pricingSlider.next();
+  // pricingSlider.next();
 }, 5000);

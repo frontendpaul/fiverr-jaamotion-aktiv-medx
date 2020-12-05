@@ -963,6 +963,7 @@ h1, h2, h3 {
 
 .pricing-card-wrapper {
   height: 770px;
+  margin: 0 25px;
 }
 
 .pricing-card {
@@ -970,6 +971,10 @@ h1, h2, h3 {
   border: 2px solid #CCCCCC;
   padding: 15px 40px;
   color: var(--black);
+}
+
+.pricing-card-wrapper .pricing-card {
+  margin: 0;
 }
 
 .bestseller {
