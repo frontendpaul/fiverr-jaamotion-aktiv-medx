@@ -327,6 +327,7 @@ input::placeholder {
   width: 100%;
   min-height: 100vh;
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
   position: fixed;
   top: -100vh;
@@ -1186,8 +1187,9 @@ input::placeholder {
 /* Fortune wheel section */
 .fortune-wheel {
   position: relative;
-  padding-bottom: 50vw;
-  margin-bottom: 100px;
+  padding-bottom: 80vw;
+  /* margin-bottom: 100px; */
+  overflow-x: hidden;
 }
 
 .fortune-wheel p {
@@ -1213,10 +1215,13 @@ p.wheel-terms {
 }
 
 .fortune-wheel-bg {
-  height: 50vw;
+  height: 100vw;
   position: absolute;
   top: 150vw;
   z-index: -2;
+  width: 100%;
+  overflow-y: visible;
+  /* overflow: hidden; */
 }
 
 
