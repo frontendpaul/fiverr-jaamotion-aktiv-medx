@@ -93,7 +93,7 @@ h1, h2, h3 {
 
 input, select, textarea {
   font-size: 16px;
-  padding: 1em 2em;
+  padding: 1em;
   color:var(--grey-text);
   border: 1px solid var(--grey-text);
   border-radius: 15px;
@@ -286,7 +286,8 @@ input::placeholder {
 
 /* Transitions */
 .header,
-.btn,.icon--framed,
+.btn,
+.icon--framed,
 .services-item .overlay,
 .faq-arrow, .faq-title {
   transition: .3s;
@@ -1210,8 +1211,7 @@ p.wheel-terms {
   position: absolute;
   bottom: -50vw;
   left: 5%;
-  animation: rotate360 5s;
-  animation-iteration-count: infinite;
+  animation: rotate360 5s linear infinite;
 }
 
 .fortune-wheel-bg {
@@ -1329,13 +1329,17 @@ p.wheel-terms {
   margin: 0;
 }
 
-.hidden-text {
+p.hidden-text {
   max-height: 0;
   overflow: hidden;
   margin: 0;
-  transition: .5s;
+  transition: max-height .5s linear,
+  margin-top 0s linear .5s, margin-bottom .5s linear;
 }
 
+.faq.open {
+  /* padding-bottom: 40px; */
+}
 
 .faq.open .faq-arrow {
   transform: scaleY(-1);
@@ -1346,8 +1350,10 @@ p.wheel-terms {
 }
 
 .faq.open .hidden-text {
-  max-height: 100vh;
-  margin: 20px 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: max-height .5s linear, margin-top 0s linear, margin-bottom 0s linear;
+  max-height: 400px;
 }
 
 
