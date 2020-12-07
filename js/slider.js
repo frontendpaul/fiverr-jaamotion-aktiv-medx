@@ -2,7 +2,10 @@ const testimonialsSlider = new Siema({
   selector: '.testimonials-slider',
   duration: 500,
   easing: 'ease-out',
-  perPage: 1,
+  perPage: {
+    768: 2,
+    1024: 3,
+  },
   loop: true
 });
 
@@ -31,7 +34,10 @@ const staffSlider = new Siema({
   selector: '.staff-slider',
   duration: 500,
   easing: 'ease-out',
-  perPage: 1,
+  perPage: {
+    768: 2,
+    1024: 3,
+  },
   loop: true,
   onInit: animateCurrentSlide,
   onChange: animateCurrentSlide
