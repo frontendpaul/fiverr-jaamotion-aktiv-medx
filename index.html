@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <header class="header d-flex">
-    <div class="header-left d-flex align-items-center">
+  <header class="header d-flex align-items-center">
+    <div class="header-left d-flex  align-items-center">
       <div class="hamburger-menu d-flex justify-content-center">
         <div class="icon menu-trigger">
           <i aria-hidden="true" class="fas fa-bars"></i>
@@ -85,7 +85,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col--100 col-lg-60">
+        <div class="col--100 col_lg--60">
           <div class="hero-content">
             <h2 class="title hero-title--big">Deine gesundheit</br>ist unser erfolg</h2>
             <p>Hallo, mein Name ist Jens Buse, ich bin Geschäftsführer des Aktiv MedX Training &amp; EMS-Personal
@@ -164,7 +164,7 @@
   <section class="features">
     <div class="container">
       <div class="row">
-        <div class="col--100">
+        <div class="col--100 col_lg--60 features-top">
           <h2 class="title section-title">schneller ans ziel</h2>
 
           <div class="features-icons d-flex">
@@ -462,6 +462,40 @@
               </div>
             </div>
           </div>
+
+          <div class="card testimonials-card d-flex flex-column">
+            <img src="./assets/303030.png" alt="" class="testimonials-img">
+            <div class="stars d-flex">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+            </div>
+            <div class="testimonials-content">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
+              <div class="person">
+                <p><span class="name">Christopher D.</span></br>Bruchsal, BW</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonials-card d-flex flex-column">
+            <img src="./assets/303030.png" alt="" class="testimonials-img">
+            <div class="stars d-flex">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+              <img src="./assets/star.svg" alt="" class="star">
+            </div>
+            <div class="testimonials-content">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
+              <div class="person">
+                <p><span class="name">Christopher D.</span></br>Bruchsal, BW</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -500,7 +534,9 @@
 
         <div class="pricing-card-wrapper">
           <div class="card pricing-card bestseller d-flex flex-column" id="medx-premium">
-            <p class="bestseller-title title">bestseller</p>
+            <div class="ribbon">
+              <p class="ribbon-title title">bestseller</p>
+            </div>
             <p class="card-title title">medx<br /> premium</p>
             <div class="price-wrapper">
               <p class="price title">8<span>99</span></p>
@@ -528,7 +564,6 @@
 
         <div class="pricing-card-wrapper">
           <div class="card pricing-card d-flex flex-column" id="medx-premium">
-            <p class="bestseller-title title">bestseller</p>
             <p class="card-title title">ems<br /> premium</p>
             <div class="price-wrapper">
               <p class="price title">19<span>99</span></p>
