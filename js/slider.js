@@ -1,17 +1,39 @@
 function animateTestimonialsSlide() {
   if(window.innerWidth >= 1024) {
 
+    for (let i = 3 - this.innerElements.length; i < 3; i++) { 
+      if (i === this.currentSlide) {
+        if (this.currentSlide < 0) {
+          this.innerElements[this.currentSlide + this.innerElements.length].classList.add('active');
+        } else {
+          this.innerElements[this.currentSlide].classList.add('active');
+        }
+      } else if (i < 0) {
+          this.innerElements[i + this.innerElements.length].classList.remove('active');
+        } else {
+          this.innerElements[i].classList.remove('active');
+        }
+      
+      
+    }  
+    // for (let i = 3 - this.innerElements.length; i < 3; i++) {
+    //   const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
 
-    for (let i = 3 - this.innerElements.length; i < 3; i++) {
-      console.log(i);
-      const addOrRemove = i+2 === this.currentSlide ? 'add' : 'remove';
-      this.innerElements[i+2].classList[addOrRemove]('active');
-    }
+    //   if (i < 0) {
+    //     this.innerElements[i + this.innerElements.length].classList[addOrRemove]('active');
+    //     console.log('minus');
+    //   } else {
+    //     console.log('plus');
+    //     this.innerElements[i].classList[addOrRemove]('active');
+    //   }
 
-    this.innerElements.forEach((slide, i) => {
-      const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
-      this.innerElements[i].classList[addOrRemove]('active');
-    });
+    //   // console.log(i);
+    // }
+    
+    // this.innerElements.forEach((slide, i) => {
+    //   const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
+    //   this.innerElements[i].classList[addOrRemove]('active');
+    // });
   }
 }
 
@@ -32,7 +54,9 @@ const pricingSlider = new Siema({
   selector: '.pricing-slider',
   duration: 500,
   easing: 'ease-out',
-  perPage: 1,
+  perPage: {
+    1280: 3,
+  },
   loop: true
 });
 
@@ -56,6 +80,7 @@ const staffSlider = new Siema({
   perPage: {
     768: 2,
     1024: 3,
+    1280: 4,
   },
   loop: true,
   onInit: animateCurrentSlide,
@@ -71,7 +96,7 @@ staffNext.addEventListener("click", () => staffSlider.next());
 
 
 setInterval(() => {
-  // testimonialsSlider.next();
+  testimonialsSlider.next();
   pricingSlider.next();
   staffSlider.next();
 }, 5000);

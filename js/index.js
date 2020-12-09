@@ -20,11 +20,26 @@ document.querySelector('.close-btn').addEventListener('click', function () {
 })
 
 // Dropdown menu handler
-document.querySelector(".has-dropdown > a").addEventListener('click', function () {
+const dropdownLink = document.querySelector(".has-dropdown > a");
+const submenu = document.querySelector('.submenu');
+
+dropdownLink.addEventListener('click', function (e) {
   this.parentElement
     .querySelector(".submenu")
-    .classList.toggle("active"),
-    this.classList.toggle("open");
+    .classList.toggle("active");
+  this.classList.toggle("open");
+
+  // Important because of event bubbling below
+  e.stopPropagation();
+});
+
+// Clicking outside will hide submenu
+// Working by event bubbling
+document.addEventListener('click', (e) => {
+  if (submenu.classList.contains('active') && e.target != submenu) {
+    dropdownLink.classList.remove('open');
+    submenu.classList.remove('active');
+  }
 });
 
 
