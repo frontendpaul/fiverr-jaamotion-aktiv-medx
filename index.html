@@ -16,75 +16,81 @@
 </head>
 
 <body>
-  <header class="header d-flex align-items-center">
-    <div class="header-left d-flex  align-items-center">
-      <div class="hamburger-menu d-flex justify-content-center">
-        <div class="icon menu-trigger">
-          <i aria-hidden="true" class="fas fa-bars"></i>
+  <header class="header">
+    <div class="container d-flex align-items-center">
+      <div class="header-left d-flex  align-items-center">
+        <div class="hamburger-menu d-flex justify-content-center">
+          <div class="icon menu-trigger">
+            <i aria-hidden="true" class="fas fa-bars"></i>
+          </div>
         </div>
+        <nav class="main-menu-nav">
+          <ul class="menu main-menu">
+            <li class="menu-item"><a href="/index.html" class="menu-link active">Start</a></li>
+            <li class="menu-item"><a href="/aktiv-medx-trainingskonzept.html" class="menu-link">MedX Trainingskonzept</a>
+            </li>
+            <li class="menu-item"><a href="/ems.html" class="menu-link">EMS-Personal Training</a></li>
+            <li class="menu-item has-dropdown">
+              <a href="#" class="menu-link">Unser Angebot</a>
+              <ul class="submenu">
+                <li class="menu-item"><a href="/rehasport.html" class="menu-link">Rehasport</a></li>
+                <li class="menu-item"><a href="/ruckentraining.html" class="menu-link">Gesunder Rücken</a></li>
+                <li class="menu-item"><a href="/gesunheitstraining.html" class="menu-link">Schmerzfrei bewegen</a></li>
+                <li class="menu-item"><a href="/muskelaufbau.html" class="menu-link">Muskelaufbau</a></li>
+                <li class="menu-item"><a href="/contact.html" class="menu-link">Starkes Herz</a></li>
+                <li class="menu-item"><a href="/firmenfitness.html" class="menu-link">Firmenfitness</a></li>
+                <li class="menu-item"><a href="/wellness.html" class="menu-link">Wellness</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="/about.html" class="menu-link">Über uns</a></li>
+            <li class="menu-item"><a href="/contact.html" class="menu-link">Öffnungszeiten & Kontakt</a></li>
+            <li class="menu-item"><a href="/news.html" class="menu-link">News</a></li>
+          </ul>
+  
+          <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" x="0px" y="0px" width="1em"
+              height="1em" viewBox="0 0 92.132 92.132">
+              <path d="M2.141,89.13c1.425,1.429,3.299,2.142,5.167,2.142c1.869,0,3.742-0.713,5.167-2.142l33.591-33.592L79.657,89.13
+                c1.426,1.429,3.299,2.142,5.167,2.142c1.867,0,3.74-0.713,5.167-2.142c2.854-2.854,2.854-7.48,0-10.334L56.398,45.205
+                l31.869-31.869c2.855-2.853,2.855-7.481,0-10.334c-2.853-2.855-7.479-2.855-10.334,0L46.065,34.87L14.198,3.001
+                c-2.854-2.855-7.481-2.855-10.333,0c-2.855,2.853-2.855,7.481,0,10.334l31.868,31.869L2.143,78.795
+                C-0.714,81.648-0.714,86.274,2.141,89.13z" />
+            </svg>
+          </div>
+  
+          <div class="menu-bg">
+            <img src="./assets/blob-2-2.svg" alt="" class="menu-bg-img" id="blob-1">
+            <img src="./assets/aktiv_medix_18.svg" alt="" class="menu-bg-img" id="blob-2">
+          </div>
+        </nav>
       </div>
-      <nav class="main-menu-nav">
-        <ul class="menu main-menu">
-          <li class="menu-item"><a href="/index.html" class="menu-link active">Start</a></li>
-          <li class="menu-item"><a href="/aktiv-medx-trainingskonzept.html" class="menu-link">MedX Trainingskonzept</a>
-          </li>
-          <li class="menu-item"><a href="/ems.html" class="menu-link">EMS-Personal Training</a></li>
-          <li class="menu-item has-dropdown">
-            <a href="#" class="menu-link">Unser Angebot</a>
-            <ul class="submenu">
-              <li class="menu-item"><a href="/rehasport.html" class="menu-link">Rehasport</a></li>
-              <li class="menu-item"><a href="/ruckentraining.html" class="menu-link">Gesunder Rücken</a></li>
-              <li class="menu-item"><a href="/gesunheitstraining.html" class="menu-link">Schmerzfrei bewegen</a></li>
-              <li class="menu-item"><a href="/muskelaufbau.html" class="menu-link">Muskelaufbau</a></li>
-              <li class="menu-item"><a href="/contact.html" class="menu-link">Starkes Herz</a></li>
-              <li class="menu-item"><a href="/firmenfitness.html" class="menu-link">Firmenfitness</a></li>
-              <li class="menu-item"><a href="/wellness.html" class="menu-link">Wellness</a></li>
-            </ul>
-          </li>
-          <li class="menu-item"><a href="/about.html" class="menu-link">Über uns</a></li>
-          <li class="menu-item"><a href="/contact.html" class="menu-link">Öffnungszeiten & Kontakt</a></li>
-          <li class="menu-item"><a href="/news.html" class="menu-link">News</a></li>
-        </ul>
-
-        <div class="close-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" x="0px" y="0px" width="1em"
-            height="1em" viewBox="0 0 92.132 92.132">
-            <path d="M2.141,89.13c1.425,1.429,3.299,2.142,5.167,2.142c1.869,0,3.742-0.713,5.167-2.142l33.591-33.592L79.657,89.13
-              c1.426,1.429,3.299,2.142,5.167,2.142c1.867,0,3.74-0.713,5.167-2.142c2.854-2.854,2.854-7.48,0-10.334L56.398,45.205
-              l31.869-31.869c2.855-2.853,2.855-7.481,0-10.334c-2.853-2.855-7.479-2.855-10.334,0L46.065,34.87L14.198,3.001
-              c-2.854-2.855-7.481-2.855-10.333,0c-2.855,2.853-2.855,7.481,0,10.334l31.868,31.869L2.143,78.795
-              C-0.714,81.648-0.714,86.274,2.141,89.13z" />
-          </svg>
+  
+      <div class="header-right">
+        <div class="logo">
+          <a href="#main">
+            <img src="./assets/Logo-Aktiv-MedX.png" alt="" class="logo-img">
+          </a>
         </div>
-
-        <div class="menu-bg">
-          <img src="./assets/blob-2-2.svg" alt="" class="menu-bg-img" id="blob-1">
-          <img src="./assets/aktiv_medix_18.svg" alt="" class="menu-bg-img" id="blob-2">
-        </div>
-      </nav>
-    </div>
-
-    <div class="header-right">
-      <div class="logo">
-        <a href="#main">
-          <img src="./assets/Logo-Aktiv-MedX.png" alt="" class="logo-img">
-        </a>
       </div>
     </div>
   </header>
 
 
   <section id="hero" class="hero">
-    <div class="hero-bg">
-      <img src="./assets/aktiv_medix_11.png" alt="" class="hero-bg-img" id="hero-img-1">
-      <div class="hero-img-wrapper">
-        <img src="./assets/Header_red_blob.svg" alt="" class="hero-bg-img" id="hero-img-2">
-        <img src="./assets/JENS-1-cut.png" alt="" class="hero-bg-img" id="hero-img-3">
+    <div class="container bg-container">
+      <div class="row">
+        <div class="hero-bg">
+          <img src="./assets/aktiv_medix_11.png" alt="" class="hero-bg-img" id="hero-img-1">
+          <div class="hero-img-wrapper">
+            <img src="./assets/Header_red_blob.svg" alt="" class="hero-bg-img" id="hero-img-2">
+            <img src="./assets/JENS-1-cut.png" alt="" class="hero-bg-img" id="hero-img-3">
+          </div>
+          <img src="./assets/aktiv_medix_15.png" alt="" class="hero-bg-img" id="hero-img-4">
+          <img src="./assets/Ellipse-134-1.svg" alt="" class="hero-bg-img" id="hero-img-5">
+        </div>
       </div>
-      <img src="./assets/aktiv_medix_15.png" alt="" class="hero-bg-img" id="hero-img-4">
-      <img src="./assets/Ellipse-134-1.svg" alt="" class="hero-bg-img" id="hero-img-5">
     </div>
-    <div class="container">
+    <div class="container hero-container">
       <div class="row">
         <div class="col--100 col_lg--60">
           <div class="hero-content">
@@ -109,7 +115,7 @@
 
   <section class="main-heading">
     <div class="container">
-      <h1 class="title">Aktiv medx training </br> dein gesundheitsstudio in osnabrück</h1>
+      <h1 class="title main-title">Aktiv medx training </br> dein gesundheitsstudio in osnabrück</h1>
     </div>
   </section>
 
@@ -166,7 +172,7 @@
     <div class="container">
       <div class="row">
         <div class="col--100 col_lg--60 features-top">
-          <h2 class="title section-title">schneller ans ziel</h2>
+          <h2 class="title  main-title">schneller ans ziel</h2>
 
           <div class="features-icons d-flex">
             <div class="framed-icon-wrapper text-center">
@@ -339,12 +345,16 @@
 
 
   <section class="analysis">
-    <div class="analysis-bg">
-      <img src="./assets/index_red_2.svg" alt="" class="analysis-bg-img" id="img-1">
-      <img src="./assets/shutterstock_551338465.png" alt="" class="analysis-bg-img" id="img-2">
-      <img src="./assets/Ellipse-121.svg" alt="" class="analysis-bg-img" id="img-3">
-      <img src="./assets/index_red_3.svg" alt="" class="analysis-bg-img" id="img-4">
-      <img src="./assets/blob-3.svg" alt="" class="analysis-bg-img" id="img-5">
+    <div class="container bg-container">
+      <div class="row">
+        <div class="analysis-bg">
+          <img src="./assets/index_red_2.svg" alt="" class="analysis-bg-img" id="img-1">
+          <img src="./assets/shutterstock_551338465.png" alt="" class="analysis-bg-img" id="img-2">
+          <img src="./assets/Ellipse-121.svg" alt="" class="analysis-bg-img" id="img-3">
+          <img src="./assets/index_red_3.svg" alt="" class="analysis-bg-img" id="img-4">
+          <img src="./assets/blob-3.svg" alt="" class="analysis-bg-img" id="img-5">
+        </div>
+      </div>
     </div>
 
     <div class="container">
@@ -423,14 +433,14 @@
               <img src="./assets/star.svg" alt="" class="star">
             </div>
             <div class="testimonials-content">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem Sed ut perspiciatis unde omnis </p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
               <div class="person">
                 <p><span class="name">Christopher D.</span></br>Bruchsal, BW</p>
               </div>
             </div>
           </div>
 
-          <div class="card testimonials-card d-flex flex-column">
+          <div class="card testimonials-card d-flex flex-column active">
             <img src="./assets/303030.png" alt="" class="testimonials-img">
             <div class="stars d-flex">
               <img src="./assets/star.svg" alt="" class="star">
@@ -463,40 +473,14 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="card testimonials-card d-flex flex-column">
-            <img src="./assets/303030.png" alt="" class="testimonials-img">
-            <div class="stars d-flex">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-            </div>
-            <div class="testimonials-content">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
-              <div class="person">
-                <p><span class="name">Christopher D.</span></br>Bruchsal, BW</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card testimonials-card d-flex flex-column">
-            <img src="./assets/303030.png" alt="" class="testimonials-img">
-            <div class="stars d-flex">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-              <img src="./assets/star.svg" alt="" class="star">
-            </div>
-            <div class="testimonials-content">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem</p>
-              <div class="person">
-                <p><span class="name">Christopher D.</span></br>Bruchsal, BW</p>
-              </div>
-            </div>
-          </div>
+    <div class="container bg-container">
+      <div class="row">
+        <div class="testimonials-bg">
+          <img src="./assets/aktiv_medix_18.svg" alt="" class="testimonials-bg-img">
         </div>
       </div>
     </div>
@@ -599,7 +583,9 @@
 
   <section class="partner">
     <div class="bg-overlay"></div>
-    <img src="./assets/hansefit.png" alt="" class="partner-logo">
+    <div class="container">
+      <img src="./assets/hansefit.png" alt="" class="partner-logo">
+    </div>
     <div class="content d-flex flex-column justify-content-center">
 
       <h2 class="title prartner-title">offizeller hansefit partner</h2>
@@ -669,8 +655,7 @@
         <div class="col--100 col_md--50 wheel-left">
           <h2 class="title section-title section-title--big">Fitness glücksrad</h2>
           <p class="fortune-wheel-text">Deine Chance auf 8 Wochen Gratis-Training!</p>
-          <p class="wheel-terms">Hauptgewinn von 8 Wochen Gratistraining gilt nur in Verbindung mit einem 26 Wochen
-            Vertrag.</p>
+          <!-- <p class="wheel-terms">Hauptgewinn von 8 Wochen Gratistraining gilt nur in Verbindung mit einem 26 Wochen Vertrag.</p> -->
         </div>
         <div class="col--100 col_md--50 wheel-right">
           <img src="./assets/shutterstock_61017319_frei.png" alt="" class="wheel-lady">
@@ -692,8 +677,12 @@
 
 
   <section class="blog-lead">
-    <div class="blog-lead-bg">
-      <img src="./assets/frau_gewusst-1.png" alt="" class="blog-lead-bg-img">
+    <div class="container bg-container">
+      <div class="row">
+        <div class="blog-lead-bg">
+          <img src="./assets/frau_gewusst-1.png" alt="" class="blog-lead-bg-img">
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="row">
@@ -716,9 +705,11 @@
   <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col--100 col_lg--50">
+        <div class="col--100">
           <h3 class="title">Beratungstermin</h3>
-          <h2 class="title section-title">WORAUF WARTEST DU?</h2>
+          <h2 class="title main-title">WORAUF WARTEST DU?</h2>
+        </div>
+        <div class="col--100 col_lg--50">
     
           <form action="" class="contact-form">
             <div class="form-group">
@@ -763,7 +754,7 @@
 
   <section class="faq-section">
     <div class="container">
-      <h2 class="title section-title">Häufig gestellte Fragen</h2>
+      <h2 class="title main-title">Häufig gestellte Fragen</h2>
 
       <div class="row">
         <div class="col--100 col_md--50">

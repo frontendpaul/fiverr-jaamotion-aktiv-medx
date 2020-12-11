@@ -1,41 +1,41 @@
-function animateTestimonialsSlide() {
-  if(window.innerWidth >= 1024) {
+// function animateTestimonialsSlide() {
+//   if(window.innerWidth >= 1024) {
 
-    for (let i = 3 - this.innerElements.length; i < 3; i++) { 
-      if (i === this.currentSlide) {
-        if (this.currentSlide < 0) {
-          this.innerElements[this.currentSlide + this.innerElements.length].classList.add('active');
-        } else {
-          this.innerElements[this.currentSlide].classList.add('active');
-        }
-      } else if (i < 0) {
-          this.innerElements[i + this.innerElements.length].classList.remove('active');
-        } else {
-          this.innerElements[i].classList.remove('active');
-        }
+//     for (let i = 3 - this.innerElements.length; i < 3; i++) { 
+//       if (i === this.currentSlide) {
+//         if (this.currentSlide < 0) {
+//           this.innerElements[this.currentSlide + this.innerElements.length].classList.add('active');
+//         } else {
+//           this.innerElements[this.currentSlide].classList.add('active');
+//         }
+//       } else if (i < 0) {
+//           this.innerElements[i + this.innerElements.length].classList.remove('active');
+//         } else {
+//           this.innerElements[i].classList.remove('active');
+//         }
       
       
-    }  
-    // for (let i = 3 - this.innerElements.length; i < 3; i++) {
-    //   const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
+//     }  
+//     for (let i = 3 - this.innerElements.length; i < 3; i++) {
+//       const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
 
-    //   if (i < 0) {
-    //     this.innerElements[i + this.innerElements.length].classList[addOrRemove]('active');
-    //     console.log('minus');
-    //   } else {
-    //     console.log('plus');
-    //     this.innerElements[i].classList[addOrRemove]('active');
-    //   }
+//       if (i < 0) {
+//         this.innerElements[i + this.innerElements.length].classList[addOrRemove]('active');
+//         console.log('minus');
+//       } else {
+//         console.log('plus');
+//         this.innerElements[i].classList[addOrRemove]('active');
+//       }
 
-    //   // console.log(i);
-    // }
+//       // console.log(i);
+//     }
     
-    // this.innerElements.forEach((slide, i) => {
-    //   const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
-    //   this.innerElements[i].classList[addOrRemove]('active');
-    // });
-  }
-}
+//     this.innerElements.forEach((slide, i) => {
+//       const addOrRemove = i === this.currentSlide ? 'add' : 'remove';
+//       this.innerElements[i].classList[addOrRemove]('active');
+//     });
+//   }
+// }
 
 const testimonialsSlider = new Siema({
   selector: '.testimonials-slider',
@@ -46,8 +46,8 @@ const testimonialsSlider = new Siema({
     1024: 3,
   },
   loop: true,
-  onInit: animateTestimonialsSlide,
-  onChange: animateTestimonialsSlide
+  // onInit: animateTestimonialsSlide,
+  // onChange: animateTestimonialsSlide
 });
 
 const pricingSlider = new Siema({
@@ -81,6 +81,7 @@ const staffSlider = new Siema({
     768: 2,
     1024: 3,
     1280: 4,
+    1440: 5,
   },
   loop: true,
   onInit: animateCurrentSlide,
@@ -100,3 +101,19 @@ setInterval(() => {
   pricingSlider.next();
   staffSlider.next();
 }, 5000);
+
+
+
+
+function toggleSliders () {
+  if (window.innerWidth > 1279) {
+    testimonialsSlider.destroy(true);
+    pricingSlider.destroy(true);
+  } else {
+    testimonialsSlider.init();
+    pricingSlider.init();
+  }
+}
+
+toggleSliders();
+window.addEventListener('resize', toggleSliders)
