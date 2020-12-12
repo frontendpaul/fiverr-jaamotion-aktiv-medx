@@ -603,7 +603,7 @@ input::placeholder {
   color: var(--secondary-text);
 }
 
-.methodology-card:first-of-type {
+.methodology-card {
   margin-bottom: 2rem;
 }
 
@@ -1134,15 +1134,15 @@ input::placeholder {
 
 
 
-/* Partner */
-.partner {
+/* banner */
+.banner {
   height: 379px;
   background: url(./assets/Hansefit_hero.jpg) 50% 50%/cover no-repeat;
   position: relative;
   margin: 50px 0 0;
 }
 
-.partner .bg-overlay {
+.banner .bg-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1152,7 +1152,7 @@ input::placeholder {
   opacity: .5;
 }
 
-.partner .content {
+.banner .content {
   text-align: center;
   position: relative;
   z-index: 2;
@@ -1160,7 +1160,7 @@ input::placeholder {
   padding-top: 50px;
 }
 
-.partner .container {
+.banner .container {
   width: 100%;
   max-width: 95%;
   position: absolute;
@@ -1173,7 +1173,7 @@ input::placeholder {
   width: 30vw;
 }
 
-.prartner-title {
+.banner-title {
   color: var(--white);
   font-size: 30px;
   margin: 0;
@@ -1477,6 +1477,118 @@ p.hidden-text {
   color: var(--white);
   font-size: 1.5rem;
   margin: 0 35px;
+}
+
+
+
+
+/* SUBPAGES */
+
+/* Hero */
+.hero-bg-img#hero-img-6 {
+  width: 100%;
+  right: 0;
+  top: 120px;
+}
+
+.subpage .hero-bg-img#hero-img-4 {
+  left: -30%;
+  top: 280vw;
+}
+
+.subpage .hero-content {
+  box-shadow: 0px 30px 30px #00000029;
+}
+
+.subpage-hero-title {
+  font-weight: 500;
+  margin: 0;
+  font-size: 30px;
+}
+
+.hero-text {
+  margin-top: 50px;
+}
+
+
+/* Goals */
+.goals,
+.video-section,
+.banner,
+.article-cta {
+  margin: 100px 0;
+}
+
+.goals-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.goals-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goals-card p {
+  margin-bottom: 2em;
+}
+
+.goals-card .btn-wrapper {
+  margin: auto 0 0;
+}
+
+
+.video-section {
+  background: url(./assets/ziel_shape.svg) 40vw 50%/100% no-repeat;
+}
+
+.video {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.video-overlay svg {
+  height: 30%;
+}
+
+
+.banner#firmenfitness {
+  background-image: url(./assets/firmenfitness_hero.jpg);
+}
+
+
+
+.article-cta {
+  margin: 100px 0 50px;
+  padding: 70vw 0 0;
+  position: relative;
+}
+
+.article-cta-bg-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+
+.arrow-spacer {
+  display: none;
 }
 
 
@@ -1921,6 +2033,64 @@ p.hidden-text {
     font-size: 1.5rem;
     margin: 10px 0;
   }
+
+
+
+
+
+  /* SUBPAGES */
+  .hero-bg-img#hero-img-6 {
+    width: 80%;
+  }
+
+  .subpage .hero-bg-img#hero-img-4 {
+    left: -10%;
+    top: 135vw;
+  }
+
+  .subpage .hero-container {
+    padding-top: 45vw;
+  }
+  
+  .subpage-hero-title {
+    font-size: 40px;
+  }
+
+  .subpage .hero-content::after {
+    transform: initial;
+    left: initial;
+    right: 20%;
+  }
+
+  .hero-text {
+    margin-top: 30vw;
+  }
+
+
+  .goals-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .video-section {
+    background-size: 80%;
+    background-position: 50vw 0;
+  }
+
+
+  .article-cta {
+    padding: 40vw 0 0;
+  }
+
+  .article-cta-bg-img {
+    width: 90%;
+    left: -20vw;
+  }
+
+  .article-cta .hero-content::after {
+    right: initial;
+    left: 20%;
+  }
 }
 
 
@@ -2082,9 +2252,9 @@ p.hidden-text {
 
  
 
-  /* Partner */
+  /* banner */
 
-  .prartner-title {
+  .banner-title {
     font-size: 50px;
   }
 
@@ -2151,6 +2321,41 @@ p.hidden-text {
     padding: 230px 10% 50px 20%;
     background-position: -10vw 0px;
   }
+
+
+
+  
+
+
+  /* SUBPAGES */
+  .hero-bg-img#hero-img-6 {
+    width: 65%;
+    right: -5%;
+  }
+
+  .subpage .hero-bg-img#hero-img-4 {
+    left: -10%;
+    top: 1000px;
+  }
+
+  .subpage .hero-container {
+    padding-top: 250px;
+  }
+
+  .subpage .hero-container .col_lg--50 {
+    margin-left: 20%;
+  }
+
+  .hero-text {
+    width: 50%;
+    margin-top: 220px;
+  }
+
+  .subpage .hero-cta-wrapper {
+    text-align: center;
+    margin-top: 10vw;
+  }
+
 }
 
 
@@ -2425,12 +2630,12 @@ p.hidden-text {
 
   
 
-  /* Partner */
-  .partner {
+  /* banner */
+  .banner {
     height: 479px;
   }
 
-  .prartner-title {
+  .banner-title {
     font-size: 60px;
   }
 
@@ -2503,6 +2708,85 @@ p.hidden-text {
   .footer {
     padding: 230px 10% 50px 20%;
     background-position: -10vw 0px;
+  }
+
+  
+
+
+
+  /* SUBPAGES */
+  .hero-bg-img#hero-img-6 {
+    width: 50%;
+  }
+
+  .subpage .hero-bg-img#hero-img-4 {
+    left: -30%;
+    top: 700px;
+  }
+
+  .subpage .hero-container .col_lg--50 {
+    margin-left: 25%;
+  }
+  
+  .subpage-hero-title {
+    font-size: 45px;
+  }
+
+  .subpage .hero-content::after {
+    right: 10%;
+  }
+
+  .hero-text {
+    margin-top: 100px;
+  }
+
+  .subpage .hero-arrow {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+
+
+  .goals-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .video-section {
+    background-size: 80%;
+    background-position: 60vw -5vw;
+  }
+
+
+  .article-cta {
+    margin-top: 200px;
+    padding: 20px 0 0;
+  }
+
+  .article-cta-bg-img {
+    width: 60%;
+    left: -20vw;
+  }
+
+  .article-cta .hero-content {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .article-cta .hero-content::after {
+    right: initial;
+    left: 10%;
+  }
+
+  .subpage .hero-cta-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    left: 50px;
+  }
+
+
+  .subpage .footer {
+    margin-top: -130px;
   }
 
 
@@ -2610,12 +2894,12 @@ p.hidden-text {
 
   .services-bg-img#img-1 {}
 
-  /* Partner */
-  .partner {
+  /* banner */
+  .banner {
     height: 610px;
   }
 
-  .prartner-title {
+  .banner-title {
     font-size: 70px;
   }
 
@@ -2647,12 +2931,30 @@ p.hidden-text {
   }
 
 
+
+
+  /* SUBPAGES */
+  
+
+  .goals-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .goals-card .btn-more {
+    display: block;
+    padding: 1.1em 0;
+    text-align: center;
+  }
+
+
+  .arrow-spacer {
+    display: block;
+  }
+
 }
 
 
 @media (min-width: 1920px) {
-
-
   .features-bg {
     top: -170px;
   }
@@ -2661,6 +2963,11 @@ p.hidden-text {
     width: 1450px;
     position: relative;
     left: -170px;
+  }
+
+
+  .services-section .container {
+    /* padding-top: 120px; */
   }
 
 
@@ -2738,6 +3045,35 @@ p.hidden-text {
   .contact,
   .faq-section {
     padding-top: 150px;
+  }
+
+
+
+  /* SUBPAGES */
+  .subpage .hero-content {
+    padding: 50px;
+  }
+
+  .subpage .hero-container .col_lg--50 {
+    margin-left: 33%;
+  }
+  
+  .video-section {
+    background-size: 60%;
+  }
+
+
+  .article-cta-bg-img {
+    width: 55%;
+  }
+
+  .article-cta .hero-content {
+    margin-left: 0%;
+  }
+
+  .subpage .hero-cta-wrapper {
+    text-align: center;
+    left: -120px;
   }
 
 }

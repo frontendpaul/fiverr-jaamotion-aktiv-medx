@@ -30,6 +30,7 @@ dropdownLink.addEventListener('click', function (e) {
   this.classList.toggle("open");
 
   // Important because of event bubbling below
+  e.preventDefault();
   e.stopPropagation();
 });
 
