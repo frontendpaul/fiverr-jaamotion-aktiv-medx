@@ -1594,12 +1594,14 @@ p.hidden-text {
 
 .goals-card.centered {
   text-align: center;
-  padding: 50px 20px 30px;
 }
 
-.goals-card.centered .title {
-  text-transform: initial;
-  margin-top: 2em;
+.goals-card.centered .icon--framed {
+  margin: 0 auto;
+}
+
+.goals-card--type2 {
+  padding: 50px 20px 30px;
 }
 
 .icon--filled {
@@ -1607,16 +1609,55 @@ p.hidden-text {
   background-color: var(--primary-color);
   color: var(--white);
   font-size: 3em;
-  margin: 0 auto;
 }
 
 
 .article {
-  margin: 100px 0;
+  padding: 100px 0 0;
+}
+
+.article .container {
+  position: relative;
+}
+
+.article-bg {
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  top: -10vw;
+  right: -30%;
 }
 
 .article-img {
   border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+
+
+/* Numbered cards */
+.numbered-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.numbered-card {
+  padding: 30px;
+  position: relative;
+}
+
+.big-card-number {
+  color: var(--primary-color);
+  opacity: .64;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: .8;
+  margin: 0;
+}
+
+.numbered-card-title {
+  font-size: 20px;
 }
 
 
@@ -1678,6 +1719,11 @@ p.hidden-text {
   .col_md--60,
   .col_md--75 {
     padding: 0 10px;
+  }
+
+  
+  .order_md--1 {
+    order: -1;
   }
 
 
@@ -2123,6 +2169,13 @@ p.hidden-text {
   }
 
 
+  
+    
+  .article-bg {
+    width: 320px;
+    top: -5vw;
+    right: -20%;
+  }
 
   .article-aside {
     padding-left: 30px;
@@ -2130,6 +2183,10 @@ p.hidden-text {
 
   .article-aside .title {
     margin-top: 0;
+  }
+
+  .article-aside p {
+    width: 80%;
   }
   
   .article-cta.align-right .article-cta-bg-img {
@@ -2144,6 +2201,22 @@ p.hidden-text {
 
   .article-cta.align-right .hero-cta-wrapper {
     text-align: left;
+  }
+
+
+  .order_md--1.article-aside {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+
+  .numbered-cards {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  
+  .training-methodes .btn {
+    margin-left: 20%;
   }
 }
 
@@ -2410,6 +2483,41 @@ p.hidden-text {
     margin-top: 10vw;
   }
 
+
+    
+  /* Numbered cards */
+  .numbered-cards {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 100px;
+  }
+
+  .big-card-number {
+    position: absolute;
+    left: -90px;
+  }
+
+  .big-card-number#number1 {
+    left: -70px;
+  }
+
+  .numbered-card-title {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  
+  .training-methodes .btn {
+    margin-left: 5%;
+  }
+
+  
+    
+  .article-bg {
+    width: 360px;
+    right: -25%;
+  }
+    
 }
 
 
@@ -2484,7 +2592,7 @@ p.hidden-text {
   }
   
   .main-menu .menu-link {
-    color: var(--grey-text);
+    color: var(--primary-text);
     font-size: 16px;
     font-weight: 400;
     text-transform: initial;
@@ -2851,7 +2959,7 @@ p.hidden-text {
 
 
   .article {
-    margin: 200px 0;
+    padding: 150px 0 100px;
   }
 
   .article .col_md--50:first-of-type {
@@ -2879,6 +2987,20 @@ p.hidden-text {
     padding-left: 0;
   }
 
+  
+  .article .col_md--50.order_md-2 {
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+  /* Numbered cards */
+  .numbered-cards {
+    width: 100%;
+    gap: 120px;
+  }
+  .training-methodes .btn {
+    margin-left: 0;
+  }
 
 }
 
@@ -3042,12 +3164,19 @@ p.hidden-text {
     display: block;
   }
 
+  
+    
+  .article-bg {
+    width: 540px;
+    right: -35%;
+  }
+
 }
 
 
 @media (min-width: 1920px) {
   .features-bg {
-    top: -170px;
+    top: -5vw;
   }
   
   .features-bg-img {
@@ -3057,8 +3186,8 @@ p.hidden-text {
   }
 
 
-  .services-section .container {
-    /* padding-top: 120px; */
+  .services-section {
+    margin-bottom: 5vw;
   }
 
 
@@ -3121,14 +3250,14 @@ p.hidden-text {
   }  
 
   .fortune-wheel-bg {
-    top: -30vw;
+    top: -35vw;
   }
 
 
    /* Blog lead section */
    .blog-lead-bg-img {
     width: 1100px;
-    left: -55%;
+    left: -30vw;
     top: -5vw;
   }
 
