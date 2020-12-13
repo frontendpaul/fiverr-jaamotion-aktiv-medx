@@ -1489,6 +1489,7 @@ p.hidden-text {
   width: 100%;
   right: 0;
   top: 120px;
+  z-index: -2;
 }
 
 .subpage .hero-bg-img#hero-img-4 {
@@ -1658,6 +1659,59 @@ p.hidden-text {
 
 .numbered-card-title {
   font-size: 20px;
+}
+
+
+.card-link {
+  text-decoration: initial;
+  color: var(--primary-color);
+  display: inline-block;
+  margin-top: 1em;
+}
+
+
+.banner.reha-banner {
+  background: var(--grey-text);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.banner.reha-banner .content {
+  height: 379px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reha-banner-left {
+  position: relative;
+  background: url(./assets/MedX_14.jpg) 50% 50%/cover no-repeat;
+}
+
+.banner.reha-banner .bg-overlay {
+  background: var(--grey-text);
+  opacity: .6;
+}
+
+.banner.reha-banner .bg-overlay-2 {
+  background: linear-gradient(270deg, #707070 0%, #5D5D5DAB 31%, #38383800 100%);
+  width: 20%;
+  left: initial;
+  right: 0;
+  opacity: 1;
+  display: none;
+}
+
+.reha-banner .checklist {
+  text-align: left;
+}
+
+.reha-banner .checklist-item::before {
+  background-image: url(./assets/check-white.svg);
 }
 
 
@@ -2516,6 +2570,11 @@ p.hidden-text {
   .article-bg {
     width: 360px;
     right: -25%;
+  }
+
+
+  .banner.reha-banner .bg-overlay-2 {
+    display: block;
   }
     
 }
