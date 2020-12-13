@@ -34,7 +34,7 @@ body {
 
 /* General tags and classes */
 img, svg {
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 img {
@@ -992,6 +992,48 @@ input::placeholder {
 
 .prev-btn,
 .next-btn {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: var(--white);
+  background: var(--white);
+  width: 60px;
+  height: 60px;
+  border: 5px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* .prev-btn::after,
+.next-btn::after {
+  content: url(./assets/arrow-left.svg);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+} */
+
+/* .next-btn::after {
+  left: 55%;
+  transform: translate(-55%, -55%) scaleX(-1);
+} */
+
+.prev-btn {
+  left: 5px;
+}
+
+.next-btn {
+  right:5px;
+}
+
+.next-btn svg {
+  transform: scaleX(-1);
+}
+/* .prev-btn,
+.next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1016,7 +1058,7 @@ input::placeholder {
 
 .next-btn {
   right:5px;
-}
+} */
 
 .pricing-slider {
   padding: 35px 0;
