@@ -23,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
@@ -1412,7 +1412,8 @@ p.wheel-terms {
   margin-top: 0;
 }
 
-.contact label {
+.contact label,
+.contact--type-2 label {
   height: 0;
   position: absolute;
   visibility: hidden;
@@ -1447,6 +1448,11 @@ p.wheel-terms {
   display: none;
 }
 
+
+.contact-bg-img {
+  position: absolute;
+  z-index: -1;
+}
 
 
 /* FAQ section */
@@ -1911,6 +1917,88 @@ p.hidden-text {
   color: var(--white);
   z-index: 2;
   margin: -.2em 0;
+}
+
+
+
+
+/* CONTACT */
+.contact-section {
+  padding: 100px 0 60vw;
+}
+
+.contact-section .main-heading {
+  margin: 3em 0;
+}
+
+.contact-section .col--100 {
+  position: relative;
+}
+
+.round-container {
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.open-hours {
+  width: 95vw;
+  height: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  z-index: 3;
+}
+
+.open-hours .title {
+  margin-top: 0;
+}
+
+
+.contact--type-2 {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.contact-bg-img#img-4 {
+  width: 180%;
+  left: -40%;
+  top: -40vw;
+}
+
+.contact--type-2 input,
+.contact--type-2 select,
+.contact--type-2 textarea {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid var(--grey-text);
+  background: #F4F5F9;
+  padding-left: 0;
+}
+
+.contact--type-2 input::placeholder {
+  color: var(--grey-text);
+}
+
+
+.map-container {
+  width: 95vw;
+  height: 95vw;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -80vw;
+  clip-path: circle();
+  overflow: hidden;  
+  filter: grayscale(1);
+  transition: filter .9s;
+}
+
+
+.map-container:hover{
+  filter: grayscale(0);
 }
 
 
@@ -2536,6 +2624,44 @@ p.hidden-text {
     top: 60%;
     left: -45%;
   }
+
+
+  /* CONTACT */
+  .contact-section {
+    padding: 100px 0 20vw;
+  }
+
+  .contact-section .main-heading {
+    font-size: 40px;
+    margin: 3em 0 4em;
+  }
+
+  .open-hours {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  
+  .contact-bg-img#img-4 {
+    width: 200%;
+    top: -25vw;
+  }
+
+  .map-container {
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+    left: 35%;
+    bottom: initial;
+    top: 50px;
+    clip-path: circle();
+    overflow: hidden;  
+    filter: grayscale(1);
+    transition: filter .9s;
+  }
+
 }
 
 
@@ -2736,11 +2862,7 @@ p.hidden-text {
     top: -5vw;
     z-index: -1;
   }
-  
-  .contact-bg-img {
-    position: absolute;
-  }
-  
+    
   .contact-bg-img#img-1 {
     width: 50vw;
     right: -12%;
@@ -2865,6 +2987,17 @@ p.hidden-text {
 
 
 @media (min-width: 1280px) {
+
+  .col_vlg--50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col_vlg--100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   h3 {
     font-size: 30px;
   }
@@ -3372,6 +3505,43 @@ p.hidden-text {
     left: -25%;
   }
 
+
+
+
+  .contact-section {
+    padding-bottom: 0px;
+  }
+  
+  .open-hours {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+  }
+
+  #medx-open-hours {
+    top: -850px;
+  }
+
+  #ems-open-hours {
+    top: 500px;
+  }
+
+  .map-container {
+    width: 600px;
+    height: 600px;
+    top: 120px;
+    left: 100px;
+  }
+
+  .contact--type-2 {
+    margin-top: 400px;
+  }
+
+  .contact-bg-img#img-4 {
+    width: 220%;
+  }
+
+
 }
 
 
@@ -3581,6 +3751,15 @@ p.hidden-text {
   }
 
 
+
+  .contact-bg-img#img-4 {
+    left: -60%;
+  }
+  
+  #ems-open-hours {
+    top: 550px;
+  }
+
 }
 
 
@@ -3724,5 +3903,16 @@ p.hidden-text {
 
   .wellness-article--type-2 .content {
     left: 30%;
+  }
+
+
+
+  
+  .map-container {
+    width: 750px;
+    height: 750px;
+    top: 80px;
+    left: 120px;
+    background: #000;
   }
 }
