@@ -999,13 +999,14 @@ input::placeholder {
   transform: translateY(-50%);
   z-index: 2;
   color: var(--white);
-  background: var(--white);
+  background: transparent;
   width: 60px;
   height: 60px;
   border: 5px solid var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
 }
+
 
 /* .prev-btn::after,
 .next-btn::after {
@@ -1029,8 +1030,19 @@ input::placeholder {
   right:5px;
 }
 
+.prev-btn svg,
+.next-btn svg {
+  position: relative;
+  top: 3%;  
+}
+
+.prev-btn svg {
+  right: 3%;
+}
+
 .next-btn svg {
   transform: scaleX(-1);
+  left: 3%;
 }
 /* .prev-btn,
 .next-btn {
@@ -1678,6 +1690,7 @@ p.hidden-text {
 
 
 
+
 /* Numbered cards */
 .numbered-cards {
   display: grid;
@@ -1754,6 +1767,71 @@ p.hidden-text {
 
 .reha-banner .checklist-item::before {
   background-image: url(./assets/check-white.svg);
+}
+
+
+
+
+/* WELLNESS */
+.wellness .hero-bg-img#hero-img-4 {
+  top: 190vw;
+}
+
+.wellness-article {
+  position: relative;
+  margin: 0 0 100px;
+}
+.wellness-article-bg {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: -2;
+}
+
+.article-bg-img#img-1 {
+  width: 90%;
+  position: relative;
+  left: -5%;
+}
+
+.article-bg-img#img-3 {
+  width: 90%;
+  position: relative;
+  right: -15%;
+}
+
+.article-bg-img#img-2 {
+  width: 45%;
+  position: absolute;
+  top: 110vw;
+  right: 15%;
+}
+
+/* Full-width-gallery */
+.full-width-gallery-section {
+  position: relative;
+  margin: 100px 0;
+}
+
+.full-width-gallery-container {
+  position: relative;
+}
+
+.full-width-gallery-slider .slide {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  height: 3em;
+  bottom: 0;
+  text-align: center;
+  font-weight: 500;
+  background: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -2314,6 +2392,44 @@ p.hidden-text {
   .training-methodes .btn {
     margin-left: 20%;
   }
+
+
+
+  .wellness .hero-bg-img#hero-img-4 {
+    top: 120vw;
+  } 
+
+  .wellness-article {
+    margin: 150px 0 200px;
+    min-height: 40vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .wellness-article-bg {
+    position: absolute;
+    width: 40%;
+    top: -100px;
+  }
+  
+  .article-bg-img#img-2 {
+    position: absolute;
+    top: 66%;
+  }
+
+  .wellness-article .content {
+    width: 50%;
+    position: relative;
+    left: 45%;
+  }
+
+  .wellness-article--type-2 .wellness-article-bg {
+    right: 0;
+  }
+
+  .wellness-article--type-2 .content {
+    left: 10%;
+  }
 }
 
 
@@ -2618,6 +2734,7 @@ p.hidden-text {
   .banner.reha-banner .bg-overlay-2 {
     display: block;
   }
+
     
 }
 
@@ -2916,9 +3033,16 @@ p.hidden-text {
 
   .prev-btn,
   .next-btn {
-    font-size: 30px;
+    /* font-size: 30px; */
     width: 70px;
     height: 70px;
+  }
+
+    
+  .prev-btn svg,
+  .next-btn svg {
+    position: relative;
+    top: 1%;  
   }
 
   .staff-slider-controls .next-btn {
@@ -3272,6 +3396,26 @@ p.hidden-text {
     right: -35%;
   }
 
+
+  .wellness-article-bg {
+    position: absolute;
+    width: 35%;
+  }
+
+  .wellness-article .content {
+    width: 50%;
+  }
+
+  
+  .wellness-article .content {
+    left: 35%;
+  }
+
+  .wellness-article--type-2 .content {
+    left: 20%;
+  }
+
+
 }
 
 
@@ -3346,12 +3490,16 @@ p.hidden-text {
 
 
 
+  .fortune-wheel {
+    padding-bottom: 35vw;
+  }
+
   .wheel-img {
     bottom: -18vw;
   }  
 
   .fortune-wheel-bg {
-    top: -35vw;
+    top: -30vw;
   }
 
 
@@ -3397,4 +3545,19 @@ p.hidden-text {
     left: -120px;
   }
 
+
+  
+  .wellness-article-bg {
+    position: absolute;
+    width: 30%;
+  }
+
+  
+  .wellness-article .content {
+    left: 25%;
+  }
+
+  .wellness-article--type-2 .content {
+    left: 30%;
+  }
 }
