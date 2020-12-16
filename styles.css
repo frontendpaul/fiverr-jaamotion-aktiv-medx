@@ -52,6 +52,10 @@ a {
   color: var(--primary-text);
 }
 
+.default-link-color {
+  color: #3366ff;
+}
+
 p:last-of-type {
   margin-bottom: 0;
 }
@@ -74,6 +78,17 @@ h1, h2, h3 {
   /* color: var(--secondary-text); */
 }
 
+h4 {
+  font-size: 1.25em;
+  margin: 1em 0 .5em;
+}
+
+h5 {
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 1em 0 .5em;
+}
+
 .title {
   text-transform: uppercase;
 }
@@ -94,6 +109,18 @@ h1, h2, h3 {
 
 .text-center {
   text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
+.alert-text-color {
+  color: #F31431;
 }
 
 input, select, textarea {
@@ -123,6 +150,11 @@ input::placeholder {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.col--50 {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .col--100 {
@@ -1489,10 +1521,6 @@ p.hidden-text {
   margin-top 0s linear .5s, margin-bottom .5s linear;
 }
 
-.faq.open {
-  /* padding-bottom: 40px; */
-}
-
 .faq.open .faq-arrow {
   transform: scaleY(-1);
 }
@@ -1519,6 +1547,10 @@ p.hidden-text {
 .footer .title {
   margin: 2em 0 1em;
   font-size: 20px;
+}
+
+.footer-link.active {
+  opacity: .8;
 }
 
 .footer-bootom {
@@ -1585,6 +1617,10 @@ p.hidden-text {
   font-weight: 500;
   margin: 0;
   font-size: 30px;
+}
+
+.subpage-hero-title.regular {
+  font-weight: 400;
 }
 
 .hero-text {
@@ -2002,6 +2038,29 @@ p.hidden-text {
 }
 
 
+.news-content {
+  margin-bottom: 100px;
+}
+
+.news-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.legals {
+  margin: 150px 0 100px;
+  font-size: 16px;
+}
+
+.legals h3,
+.legals h4,
+.legals strong {
+  font-weight: 600;
+}
+
+
 
 
 @keyframes breathe-in {
@@ -2389,9 +2448,6 @@ p.hidden-text {
     margin-top: 10vw;
   }
 
-  .blog-lead-content .hero-title--big {
-    /* font-size: 45px; */
-  }
 
 
   /* Footer */
@@ -2815,16 +2871,7 @@ p.hidden-text {
   }
 
 
-
-  /* Pricing */
-  .ribbon-title {
-    /* top: -2%; */
-  }
-
- 
-
   /* banner */
-
   .banner-title {
     font-size: 50px;
   }
@@ -3623,8 +3670,6 @@ p.hidden-text {
   }
 
 
-  .services-bg-img#img-1 {}
-
   /* banner */
   .banner {
     height: 610px;
@@ -3707,6 +3752,10 @@ p.hidden-text {
 
   .wellness-article--type-2 .content {
     left: 20%;
+  }
+
+  .caption {
+    font-size: 22px;
   }
 
   
