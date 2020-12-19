@@ -793,6 +793,7 @@ input::placeholder {
   position: relative;
   z-index: 2;
   font-size: 18px;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -3200,6 +3201,13 @@ p.hidden-text {
   .features-bg-img {
     width: 1050px;
     left: -130px;
+  }
+
+
+
+  /* Gallery */
+  .gallery-img-caption {
+    font-size: 22px;
   }
 
 
