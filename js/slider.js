@@ -101,7 +101,7 @@ staffNext.addEventListener("click", () => staffSlider.next());
 setInterval(() => {
   testimonialsSlider.next();
   pricingSlider.next();
-  // staffSlider.next();
+  staffSlider.next();
 }, 5000);
 
 
