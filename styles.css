@@ -1620,6 +1620,10 @@ p.hidden-text {
   margin-top: 50px;
 }
 
+.subpage .btn-wrapper {
+  margin: 40px 0;
+}
+
 
 /* Goals */
 .goals,
@@ -1897,6 +1901,7 @@ p.hidden-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: 30px;
 }
 
 .staff-gallery .staff-card {
@@ -2605,7 +2610,7 @@ p.hidden-text {
   }
 
   
-  .training-methodes .btn {
+  .numbered-cards-section .btn {
     margin-left: 20%;
   }
 
@@ -2983,7 +2988,7 @@ p.hidden-text {
   }
 
   
-  .training-methodes .btn {
+  .numbered-cards-section .btn {
     margin-left: 5%;
   }
 
@@ -3417,7 +3422,7 @@ p.hidden-text {
   }
 
   .subpage .hero-bg-img#hero-img-4 {
-    left: -30%;
+    left: -40%;
     top: 700px;
   }
 
@@ -3438,7 +3443,7 @@ p.hidden-text {
   }
 
   .subpage .hero-arrow {
-    margin-top: 50px;
+    margin: 10%;
     margin-left: -10px;
   }
 
@@ -3533,7 +3538,7 @@ p.hidden-text {
     width: 100%;
     gap: 120px;
   }
-  .training-methodes .btn {
+  .numbered-cards-section .btn {
     margin-left: 0;
   }
 
@@ -3761,8 +3766,8 @@ p.hidden-text {
   
     
   .gallery-bg-img#img-1 {
-    width: 40%;
-    left: -35%;
+    width: 60%;
+    left: -50%;
   }
 
   .gallery-bg-img#img-3 {
