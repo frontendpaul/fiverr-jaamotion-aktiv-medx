@@ -35,6 +35,55 @@ gsap.fromTo('.hero-arrow .arrow-img',{
 
 
 
+// Heading
+let titleWrappers = gsap.utils.toArray('.title-wrapper');
+
+titleWrappers.forEach((titleWrapper) => {
+  gsap.fromTo(titleWrapper,{
+    opacity: 0},
+    {scrollTrigger: {
+      trigger: titleWrapper,
+      scrub: true,
+      start: "top bottom-=200px",
+      end: "-=200",
+      // markers: true
+    },
+    opacity: 1}
+  );
+});
+
+
+// Headings Arrows
+let arrowsLeft = gsap.utils.toArray('.arrow-img--left');
+
+arrowsLeft.forEach((arrowLeft) => {
+  gsap.fromTo(arrowLeft,{
+    x: '30vh'},
+    {scrollTrigger: {
+      trigger: arrowLeft,
+      scrub: true,
+      // markers: true
+    },
+    x: '0vh'}
+  );
+});
+
+let arrowsRight = gsap.utils.toArray('.arrow-img--right');
+
+arrowsRight.forEach((arrowRight) => {
+  gsap.fromTo(arrowRight,{
+    x: '-30vh'},
+    {scrollTrigger: {
+      trigger: arrowRight,
+      scrub: true,
+      // markers: true
+    },
+    x: '0vh'}
+  );
+});
+
+
+
 // Main Heading
 gsap.fromTo('.main-heading',{
   opacity: 0},
@@ -90,18 +139,6 @@ gsap.fromTo('.features',{
 
 
 // Services / gallery
-gsap.fromTo('.services-section .section-title',{
-  opacity: 0},
-  {scrollTrigger: {
-    trigger: '.services-section',
-    scrub: true,
-    start: "top bottom-=200px",
-    end: "-=200",
-    // markers: true
-  },
-  opacity: 1}
-);
-
 gsap.fromTo('.services-section .gallery',{
   opacity: 0,
   scale: 1.3},
@@ -210,19 +247,6 @@ gsap.fromTo('.analysis-bg-img#img-8',{
 
 
 // Testimonials
-gsap.fromTo('.testimonials .section-title',{
-  opacity: 0},
-  {scrollTrigger: {
-    trigger: '.testimonials',
-    scrub: true,
-    start: "top bottom-=200px",
-    end: "-=100",
-    // markers: true
-  },
-  opacity: 1}
-);
-
-
 gsap.fromTo('.testimonials-wrapper',{
   opacity: 0,
   scale: 1.3},
@@ -299,18 +323,6 @@ gsap.fromTo('.banner',{
 );
 
 // Staff
-gsap.fromTo('.staff .section-title',{
-  opacity: 0},
-  {scrollTrigger: {
-    trigger: '.staff',
-    scrub: true,
-    start: "top bottom-=200px",
-    end: "-=100",
-    // markers: true
-  },
-  opacity: 1}
-);
-
 gsap.fromTo('.staff-slider',{
   opacity: 0,
   scale: 1.3},

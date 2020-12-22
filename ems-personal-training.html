@@ -184,14 +184,19 @@
             Osnabrück empfiehlt</h2>
   
           <div class="video">
-            <img src="./assets/maxresdefault (2).jpg" alt="" class="video-thumbnail">
-            <div class="video-overlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="205" height="204" viewBox="0 0 205 204"><g id="play_button" transform="translate(0.115 0.084)"><g id="Ellipse_147" data-name="Ellipse 147" transform="translate(-0.115 -0.084)" fill="none" stroke="#fff" stroke-width="5"><ellipse cx="102.5" cy="102" rx="102.5" ry="102" stroke="none"></ellipse><ellipse cx="102.5" cy="102" rx="100" ry="99.5" fill="none"></ellipse></g><path id="Polygon_2" data-name="Polygon 2" d="M40.5,0,81,70H0Z" transform="translate(148.885 61.915) rotate(90)" fill="#fff"></path></g></svg>
+            <div class="thumbnail-wrapper">
+            	<img src="./assets/maxresdefault (2).jpg" alt="" class="video-thumbnail">
+            	<div class="video-overlay">
+            	  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="204" viewBox="0 0 205 204"><g id="play_button" transform="translate(0.115 0.084)"><g id="Ellipse_147" data-name="Ellipse 147" transform="translate(-0.115 -0.084)" fill="none" stroke="#fff" stroke-width="5"><ellipse cx="102.5" cy="102" rx="102.5" ry="102" stroke="none"></ellipse><ellipse cx="102.5" cy="102" rx="100" ry="99.5" fill="none"></ellipse></g><path id="Polygon_2" data-name="Polygon 2" d="M40.5,0,81,70H0Z" transform="translate(148.885 61.915) rotate(90)" fill="#fff"></path></g></svg>
+            	</div>
+            </div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/PxQyXEVRAWk?feature=oembed&amp;playlist=PxQyXEVRAWk&amp;autoplay=1&amp;wmode=opaque&amp;loop=1&amp;mute=1&amp;controls=1&amp;modestbranding=0&amp;rel=0" frameborder="0" allowfullscreen="1" allow="autoplay;encrypted-media;"></iframe>
             </div>
           </div>
   
           <div class="btn-wrapper">
-            <a href="" class="btn">jetzt Termin vereinbaren</a>
+            <a href="https://werde-fit-mit-uns.de/info_schedule/aktiv_fitness_osnabr%C3%BCck/index?utm_source=info_schedule&utm_medium=Aktiv+MEDX&utm_campaign=default&utm_content=" class="btn">jetzt Termin vereinbaren</a>
           </div>
         </div>
       </div>
@@ -347,7 +352,7 @@
             <p>und erfahre wie auch du dein Ziel erreichst. Starte jetzt mit den Experten.</p>
           </div>
           <div class="hero-cta-wrapper">
-            <a href="" class="btn">jetzt Termin vereinbaren</a>
+            <a href="https://werde-fit-mit-uns.de/info_schedule/aktiv_fitness_osnabr%C3%BCck/index?utm_source=info_schedule&utm_medium=Aktiv+MEDX&utm_campaign=default&utm_content=" class="btn">jetzt Termin vereinbaren</a>
           </br>
             <div class="alert d-flex align-items-center">
               <img src="./assets/warning.svg" alt="" class="alert-icon">
@@ -396,15 +401,26 @@
   </footer>
 
 
-  <div class="contact-bar d-flex">
+  <div class="contact-bar d-flex" data-cms-section="Kontakt Liste">
     <nav class="contact-nav">
-      <ul class="contact-menu">
-        <li><a href=""><i aria-hidden="true" class="fas fa-phone-volume"></i></a></li>
-        <li><a href=""><i aria-hidden="true" class="fas fa-dumbbell"></i></i></a></li>
-        <li><a href=""><i aria-hidden="true" class="far fa-calendar-alt"></i></a></li>
+      <ul class="contact-menu" data-cms-component-list="Kontakt Komponenten" data-cms-component-category="contact">
+        <li data-cms-component="Kontakt" data-cms-component-category="contact">
+          <a href="https://werde-fit-mit-uns.de/recall/aktiv_fitness_osnabr%C3%BCck/index?utm_source=recall&utm_medium=Aktiv+MEDX&utm_campaign=default&utm_content=" target="_blank" rel="noopener" data-cms-element="Link" data-cms-attributes="href:LINK"><i
+              aria-hidden="true" class="fas fa-phone-volume"></i></a>
+        </li>
+        <li data-cms-component="Kontakt" data-cms-component-category="contact">
+          <a href="https://werde-fit-mit-uns.de/probetraining/aktiv_fitness_osnabr%C3%BCck/index.php?utm_source=probetraining&utm_medium=Aktiv+MEDX&utm_campaign=default&utm_content=" target="_blank" rel="noopener" data-cms-element="Link" data-cms-attributes="href:LINK"><i
+              aria-hidden="true" class="fas fa-dumbbell"></i></i></a>
+        </li>
+        <li data-cms-component="Kontakt" data-cms-component-category="contact">
+          <a href="https://werde-fit-mit-uns.de/info_schedule/aktiv_fitness_osnabr%C3%BCck/index?utm_source=info_schedule&utm_medium=Aktiv+MEDX&utm_campaign=default&utm_content=" target="_blank" rel="noopener" data-cms-element="Link" data-cms-attributes="href:LINK"><i
+              aria-hidden="true" class="far fa-calendar-alt"></i></a>
+        </li>
       </ul>
     </nav>
   </div>
+
+  
 
   <script src="./js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

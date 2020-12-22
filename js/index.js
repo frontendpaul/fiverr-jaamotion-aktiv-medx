@@ -52,3 +52,9 @@ for (const faqItem of faqItems) {
     e.target.closest('.faq').classList.toggle('open');
   });
 }
+
+
+// Viedo handler
+document.querySelector('.video-overlay').addEventListener('click', (e) => {
+  e.target.closest('.thumbnail-wrapper').style.display = 'none';
+})
