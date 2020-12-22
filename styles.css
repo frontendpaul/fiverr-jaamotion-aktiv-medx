@@ -3042,7 +3042,7 @@ p.hidden-text {
   body,
   .btn,
   .alert span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn,
@@ -3599,7 +3599,7 @@ p.hidden-text {
   }
 
   .main-menu .menu-link {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   
 
@@ -3628,7 +3628,7 @@ p.hidden-text {
   }
 
   .hero-cta-btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 
 
